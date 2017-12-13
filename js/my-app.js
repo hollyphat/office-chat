@@ -339,6 +339,8 @@ myApp.onPageInit("student-chat-home",function () {
 
            $$("#mlist").append(t);
 
+           //$$('.page-content').animate({scrollTop: $$('.messages').height() }, 'slow');
+
            //console.log(t);
 
           myApp.hideIndicator();
@@ -489,6 +491,8 @@ myApp.onPageInit("staff-chat-home",function () {
             sessionStorage.setItem("last_time",f.last_time);
 
             $$("#mlist").append(t);
+
+            //$$('.page-content').animate({scrollTop: $$('.messages').height() }, 'slow');
 
             //console.log(t);
 
@@ -874,12 +878,12 @@ myApp.onPageInit('staff-password', function (page) {
             'msg' : msg
         },
         success: function (f) {
-            console.log(f);
-            if(msg_type == "student"){
-                load_st_msg();
-            }else{
-                load_staff_msg();
-            }
+            // console.log(f);
+            // if(msg_type == "student"){
+            //     load_st_msg();
+            // }else{
+            //     load_staff_msg();
+            // }
         }
     });
 }
@@ -927,6 +931,12 @@ function load_st_msg() {
         success: function (f) {
             var t = "";
             var rec = f.record;
+            var to = f.total;
+            // if(to == 1){
+            //     t += "<p class='center'><em>"+to+" new message</em></p>";
+            // }else if(to > 1){
+            //     t += "<p class='center'><em>"+to+" new messages</em></p>";
+            // }
             for(var i = 0; i < rec.length; i++){
                 if((rec[i].m_type == "student") && (rec[i].user_id == localStorage.getItem("user_id"))){
                     var m_class = "message-sent";

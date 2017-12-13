@@ -1,6 +1,6 @@
 //Settings FILE
 
-var app_name = "Mobile Office Chat";
+var app_name = "Office Mobile Chat";
 var developer_url = "https://onlinemedia.com.ng";
 var developer_email = "admin@onlinemedia.com.ng";
 var supervisor = "Mrs. Olaniyi B.C";
