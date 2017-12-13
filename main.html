@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+      <meta name="mobile-web-app-capable" content="yes">
+      <meta name="apple-mobile-web-app-capable" content="yes">
+      <meta name="apple-mobile-web-app-status-bar-style" content="black">
+      <meta name="theme-color" content="#2196f3">
+    <title>Mobile Chat</title>
+    <!-- Path to Framework7 Library CSS-->
+      <link rel="stylesheet" href="lib/juploads/JQuery.JSAjaxFileUploader.css">
+    <link rel="stylesheet" href="css/framework7.material.min.css">
+    <link rel="stylesheet" href="css/framework7.material.colors.min.css">
+      <link rel="stylesheet" href="css/font-awesome.min.css"/>
+    <!-- Path to your custom app styles-->
+    <link rel="stylesheet" href="css/my-app.css">
+      <link rel="stylesheet" href="lib/toast/css/iziToast.min.css">
+  </head>
+  <body>
+    <!-- Status bar overlay for fullscreen mode-->
+    <div class="statusbar-overlay"></div>
+    <!-- Panels overlay-->
+    <div class="panel-overlay"></div>
+    <!-- Left panel with reveal effect-->
+    <div class="panel panel-left panel-cover">
+        <div class="content-block">
+            <div class="list-block">
+                <ul>
+
+                    <li>
+                        <a href="profile.html" class="item-link close-panel">
+                            <div class="item-content">
+                                <div class="item-inner">
+                                    <div class="item-title">
+                                        <i class="fa fa-user"></i> Profile
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="about.html" class="item-link close-panel">
+                            <div class="item-content">
+                                <div class="item-inner">
+                                    <div class="item-title">
+                                        <i class="fa fa-briefcase"></i> About App
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="staff-logout item-link close-panel">
+                            <div class="item-content">
+                                <div class="item-inner">
+                                    <div class="item-title">
+                                        <i class="fa fa-sign-out"></i> Logout
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+
+
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Views-->
+    <div class="views">
+      <!-- Your main view, should have "view-main" class-->
+      <div class="view view-main">
+        <!-- Pages, because we need fixed-through navbar and toolbar, it has additional appropriate classes-->
+        <div class="pages navbar-fixed">
+          <!-- Page, data-page contains page name-->
+
+            <div class="page" data-page="main-page-2">
+
+
+                  <!--splash sceen-->
+                  <div class="page-content splash-screen center" style="color: blue; padding-top:0px;" id="splash-page">
+                      <h2 id="splash-text">
+                          <img src="img/icon.jpg" alt="" class="img-responsive2">
+                          <br>
+                          DEVELOPMENT OF MOBILE OFFICE CHAT SYSTEM
+
+                          <p style="font-style: italic; font-size: 12px;">
+                              Supervised by Mrs. Olaniyi B.C
+                          </p>
+                      </h2>
+                  </div>
+                  <!--splash scree-->
+
+                <!--login screen-->
+                <div class="page-content option-page page-1" id="main-pages">
+                    <div id="links">
+                        <div class="card">
+                            <div class="list-block">
+                                <div class="center">Select Option</div>
+                                <ul>
+                                    <li>
+                                        <a href="student.html" class="list-button item-link">Student</a>
+                                    </li>
+                                    <li>
+                                        <a href="staff.html" class="list-button item-link">Staff</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--login screen-->
+
+            </div>
+
+
+
+        </div>
+        <!-- Bottom Toolbar-->
+
+      </div>
+    </div>
+    <!--jquery-->
+
+
+
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <!-- Path to Framework7 Library JS-->
+    <script type="text/javascript" src="js/framework7.min.js"></script>
+
+    <!-- Path to your app js-->
+    <script type="text/javascript" src="lib/toast/js/iziToast.min.js"></script>
+    <script type="text/javascript" src="js/settings.js"></script>
+    <script type="text/javascript" src="js/my-app.js"></script>
+    <script type="text/javascript" src="lib/juploads/JQuery.JSAjaxFileUploader.min.js" ></script>
+
+    <!--<script type="text/javascript" src="cordova.js"></script>-->
+    <!--<script type="text/javascript" src="cordova_plugins.js"></script>-->
+
+
+  </body>
+</html>
