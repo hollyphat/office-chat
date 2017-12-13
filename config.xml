@@ -3,7 +3,7 @@
 <!-- config.xml reference: https://build.phonegap.com/docs/config-xml -->
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
-        id        = "ng.com.onlinemedia.courseware"
+        id        = "ng.com.onlinemedia.chat"
         version   = "1.0.1">
 
     <name>Mobile Chat</name>
@@ -36,7 +36,7 @@
 
 
     <!-- Define app icon and splashscreen for each platform. -->
-    <icon src="img/icon.png" />
+    <icon src="img/icon.jpp" />
     
     
     
