@@ -337,7 +337,7 @@ myApp.onPageInit("student-chat-home",function () {
           }
           sessionStorage.setItem("last_time",f.last_time);
 
-           $$("#mlist").append(t);
+           $$("#mlist").html(t);
 
            //$$('.page-content').animate({scrollTop: $$('.messages').height() }, 'slow');
 
@@ -490,7 +490,7 @@ myApp.onPageInit("staff-chat-home",function () {
             }
             sessionStorage.setItem("last_time",f.last_time);
 
-            $$("#mlist").append(t);
+            $$("#mlist").html(t);
 
             //$$('.page-content').animate({scrollTop: $$('.messages').height() }, 'slow');
 
@@ -958,7 +958,7 @@ function load_st_msg() {
             }
             sessionStorage.setItem("last_time",f.last_time);
 
-            $$("#mlist").append(t);
+            $$("#mlist").html(t);
 
             //console.log(t);
 
@@ -1014,7 +1014,7 @@ function load_staff_msg() {
             }
             sessionStorage.setItem("last_time",f.last_time);
 
-            $$("#mlist").append(t);
+            $$("#mlist").html(t);
 
             //console.log(t);
 
